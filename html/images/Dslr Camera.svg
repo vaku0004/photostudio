@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 140 86.4">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #f3ca2f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2">
+    <g id="VECTOR">
+      <path class="st0" d="M66.2,71.5v1.1c0,6.6-5.4,11.9-12,11.8H9.1c-3.9,0-7-3.1-7.1-6.9,0,0,0,0,0,0V10c0-3.9,3.1-7,7-7,0,0,0,0,0,0h29.2c3.9,0,7,3.1,7.1,6.9,0,0,0,0,0,0v49.7h8.9c6.6,0,11.9,5.2,12,11.8Z"/>
+      <polygon class="st0" points="109.8 8.4 109.8 57.2 45.3 48.7 45.3 16.9 109.8 8.4"/>
+      <path class="st0" d="M138,7.3v50.9c0,2.9-2.4,5.3-5.4,5.3h-17.5c-2.9,0-5.3-2.3-5.4-5.3V7.3c0-2.9,2.4-5.3,5.4-5.3h17.5c2.9,0,5.4,2.3,5.4,5.3Z"/>
+      <ellipse class="st0" cx="22.4" cy="59.3" rx="9.4" ry="9.2"/>
+      <path class="st0" d="M15,23.6c-2.2,0-4.1-1.8-4.1-4v-.4c0-2.2,1.9-4,4.1-4h15c2.2,0,4.1,1.8,4.1,4v.4c0,2.2-1.9,4-4.1,4"/>
+    </g>
+  </g>
+</svg>
