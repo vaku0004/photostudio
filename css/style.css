@@ -8104,12 +8104,12 @@ a.brand:focus{
 
   /* --- Sidebar menu --- */
   .menu {
-    width: 85%; /* не во всю ширину */
+    width: 70%; /* не во всю ширину */
     right: 0;
   }
 
   .menu-list > li {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 1.5rem;
   }
 
