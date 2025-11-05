@@ -7932,6 +7932,7 @@ a.brand:focus{
   .row.test:hover .review-carousel-wrapper {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.35);
+  margin-top: -3rem;  /* ЭТО Я ВНЕСЛА (УДАЛИТЬ ЕСЛИ ЧТО) */
 }
 
 }
@@ -7957,7 +7958,7 @@ a.brand:focus{
 /* Скрыт по умолчанию */
 .col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-2 {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(238, 72, 72, 0);
   transition: opacity 0.5s ease, background-color 0.5s ease;
 }
 
