@@ -8192,3 +8192,68 @@ a.brand:focus{
     background-color: #272727;
   }
 }
+
+
+
+/* =============================
+   Fixes for small phones (≤400)
+   Samsung S23 ≈ 360px
+============================= */
+@media (max-width: 400px) {
+
+  /* 1) Убираем жёлтый скроллбар на мобилках */
+  /* был ::-webkit-scrollbar-thumb { background:#cee002 } в базовых стилях */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.18) !important; }
+  /* Для Firefox */
+  * { scrollbar-color: rgba(255,255,255,0.18) transparent; }
+
+  /* 2) Контейнеры и текст — чтобы не выходили за края */
+  .boxed { padding-left: 12px; padding-right: 12px; }
+  .section { padding: 48px 0; }
+  .review-carousel-wrapper,
+  .review-carousel .review-author {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .review-carousel .review-author {
+    background: rgba(0,0,0,0.35);
+    padding: 12px 14px;
+    border-radius: 14px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    margin-right: 0;
+  }
+  .review-carousel .review-author i,
+  .review-carousel .review-author p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;      /* переносим длинные слова */
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  /* 3) Тень у заголовков на фотоблоках, чтобы не сливались */
+  .section-6 .title-uppercase,
+  .pp-scrollable.text-white .title-uppercase,
+  .pp-scrollable.text-white h2 {
+    text-shadow:
+      0 2px 10px rgba(0,0,0,0.55),
+      0 0 1px rgba(0,0,0,0.9);
+  }
+
+
+
+  /* 5) Прячем декоративные полоски/бордеры, если вдруг где-то видны */
+  .hr-bottom,
+  .hover-border::before,
+  .hover-border::after,
+  .hover-border div::before,
+  .hover-border div::after {
+    background: transparent !important;
+  }
+
+}
+
+/* Дополнительно: на всех размерах не допускаем горизонтальный скролл */
+html, body { overflow-x: hidden; }
