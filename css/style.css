@@ -8189,6 +8189,13 @@ a.brand:focus{
     height: auto;
   }
 }
+  .section-6 .title-uppercase,
+  .pp-scrollable.text-white .title-uppercase,
+  .pp-scrollable.text-white h2 {
+    text-shadow:
+      3px 3px 10px rgba(0,0,0,0.75),
+      0 0 0 rgba(0,0,0,0.9);
+  }
 
 
 @media (max-width: 400px) {
@@ -8256,12 +8263,12 @@ a.brand:focus{
   }
 
   /* 3) Тень у заголовков на фотоблоках, чтобы не сливались */
-  .section-6 .title-uppercase,
+.section-6 .title-uppercase,
   .pp-scrollable.text-white .title-uppercase,
   .pp-scrollable.text-white h2 {
     text-shadow:
-      0 2px 10px rgba(0,0,0,0.55),
-      0 0 1px rgba(0,0,0,0.9);
+      3px 3px 10px rgba(0,0,0,0.75),
+      0 0 0 rgba(0,0,0,0.9);
   }
 
 
