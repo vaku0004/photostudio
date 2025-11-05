@@ -8120,19 +8120,19 @@ a.brand:focus{
 
   /* --- Заголовки и текст --- */
   h1, .h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2, .h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   h3, .h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   p, i, .review-author, .author-name {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
   }
 
   /* --- Контейнеры и отступы --- */
@@ -8165,5 +8165,30 @@ a.brand:focus{
   img, .img-responsive {
     max-width: 100%;
     height: auto;
+  }
+}
+
+
+@media (max-width: 400px) {
+  /* Убираем жёлтые полоски и границы */
+  .hr-bottom,
+  .hover-border::before,
+  .hover-border::after,
+  .hover-border div::before,
+  .hover-border div::after {
+    background: transparent !important;
+  }
+
+  .section,
+  .navbar,
+  .boxed,
+  .pagepiling {
+    border: none !important;
+  }
+
+  /* Если остаётся линия по краю страницы */
+  body {
+    overflow-x: hidden;
+    background-color: #272727;
   }
 }
