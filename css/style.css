@@ -8067,3 +8067,103 @@ a.brand:focus{
   font-weight: 400;
 }
 
+
+
+
+
+/* ------------------------------
+   Mobile optimization for ≤400px
+--------------------------------*/
+@media (max-width: 400px) {
+
+  html {
+    font-size: 10px; /* меньше базовый размер шрифта */
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  /* --- Navbar --- */
+  .navbar {
+    height: auto;
+    padding: 1rem 1rem;
+  }
+
+  .brand img {
+    height: 1.8rem;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .brand-text {
+    font-size: 0.7rem;
+  }
+
+  /* --- Sidebar menu --- */
+  .menu {
+    width: 85%; /* не во всю ширину */
+    right: 0;
+  }
+
+  .menu-list > li {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .menu-footer .social-list a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  /* --- Заголовки и текст --- */
+  h1, .h1 {
+    font-size: 2rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.7rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.4rem;
+  }
+
+  p, i, .review-author, .author-name {
+    font-size: 0.9rem;
+  }
+
+  /* --- Контейнеры и отступы --- */
+  .section {
+    padding: 5rem 0;
+  }
+
+  .boxed {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .vertical-title {
+    display: none; /* убрать вертикальные надписи, если мешают */
+  }
+
+  .review-carousel .owl-prev,
+  .review-carousel .owl-next {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  /* --- Изображения и фон --- */
+  .section-bg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  img, .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+}
