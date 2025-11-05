@@ -7931,7 +7931,7 @@ a.brand:focus{
 
   .row.test:hover .review-carousel-wrapper {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.35);
+
   
 }
 
@@ -7955,18 +7955,40 @@ a.brand:focus{
   line-height: 1.2;
 }
 
-/* Скрыт по умолчанию */
+/* Скрыт по умолчанию *//*
 .col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-2 {
   opacity: 0;
   background-color: rgba(238, 72, 72, 0);
   transition: opacity 0.5s ease, background-color 0.5s ease;
-}
-
+}*/
+/*
 /* Появление при наведении на родительский блок */
+/* 
 .row.test:hover .col-md-5.col-lg-5.col-md-offset-1.col-lg-offset-2 {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.65);
-}
+}*/
+
+
+ .review-carousel .review-author {
+    background: rgba(0,0,0,0.35);
+    padding: 8px 8px;
+    border-radius: 14px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    margin-right: 0;
+    opacity: 0;
+  }
+
+   .row.test:hover .review-carousel .review-author {
+    background: rgba(0,0,0,0.35);
+    padding: 8px 8px;
+    border-radius: 14px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    margin-right: 0;
+    opacity: 1;
+  }
 
 /* Для мобильных устройств — ширина 100% */
 @media (max-width: 767px) {
@@ -8218,7 +8240,7 @@ a.brand:focus{
   }
   .review-carousel .review-author {
     background: rgba(0,0,0,0.35);
-    padding: 12px 14px;
+    padding: 8px 8px;
     border-radius: 14px;
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
@@ -8226,7 +8248,7 @@ a.brand:focus{
   }
   .review-carousel .review-author i,
   .review-carousel .review-author p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
     overflow-wrap: anywhere;      /* переносим длинные слова */
     word-break: break-word;
