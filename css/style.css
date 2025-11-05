@@ -7932,7 +7932,7 @@ a.brand:focus{
   .row.test:hover .review-carousel-wrapper {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.35);
-  margin-top: -3rem;  /* ЭТО Я ВНЕСЛА (УДАЛИТЬ ЕСЛИ ЧТО) */
+  
 }
 
 }
