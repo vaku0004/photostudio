@@ -479,7 +479,8 @@
                       <div class="col-md-12">
                         <h2 class="title-uppercase" data-i18n="contact.h2">Get In Touch</h2>
                         <div class="contact-info">
-                          <form class="js-form" action="mail.php" method="POST" novalidate="novalidate">
+                        <form class="js-form" action="https://formspree.io/f/mblqjldj" method="POST" novalidate="novalidate">
+
                             <div class="row">
                               <div class="form-group col-sm-6">
                                 <input type="text" name="name" required placeholder="Name*" aria-required="true"
@@ -706,6 +707,46 @@
     applyTranslations(initLang);
   })();
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.js-form');
+  if (!form) return;
+
+  // удаляем старые обработчики темы
+  const f = form.cloneNode(true);
+  form.parentNode.replaceChild(f, form);
+
+  f.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const btn = f.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+
+    try {
+      const res = await fetch(f.action, {
+        method: 'POST',
+        body: new FormData(f),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        f.reset();
+        // показать модалку успешной отправки
+        $('#success').modal('show');
+      } else {
+        // показать модалку ошибки
+        $('#error').modal('show');
+      }
+    } catch (_) {
+      // показать модалку ошибки при сетевой проблеме
+      $('#error').modal('show');
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+});
+</script>
 
 </body>
 </html>
